@@ -6,6 +6,7 @@ import com.example.sidkathuria.dictionary.models.results;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
+import retrofit2.http.Query;
 
 /**
  * Created by sidkathuria on 7/5/2017.
@@ -19,4 +20,5 @@ public interface LanguageApi {
     })
     @GET("/languages")
         Call<results> getLanguages();
+
 }

@@ -8,5 +8,8 @@ val region:String,
 val source:String,
 val sourceLanguage: sourceLanguage,
 val targetLanguage: targetLanguage,
-val type: String
+val type: String,
+val id:String,
+val lexicalEntries:lexicalEntries
+
 )
