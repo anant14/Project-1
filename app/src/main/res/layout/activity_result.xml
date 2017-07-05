@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sidkathuria.dictionary.activities.Result">
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="60sp"
+    android:layout_gravity= "center"
+    android:text="Title"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/tvActualExample"
+    android:layout_toStartOf="@+id/tvActualExample" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tvActualExample"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvActualExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Actual Example"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/tvExample"
+        android:layout_alignLeft="@+id/tvActualDefenition"
+        android:layout_alignStart="@+id/tvActualDefenition" />
+
+    <TextView
+        android:id="@+id/tvDefenition"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Definition:-"
+        android:textSize="30sp"
+        android:layout_below="@+id/tvType"
+        android:layout_toRightOf="@+id/linearLayout4"
+        android:layout_toEndOf="@+id/linearLayout4"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvActualType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Actual Type"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/tvType"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Example:-"
+        android:textSize="30sp"
+        android:layout_marginBottom="107dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:-"
+        android:textSize="30sp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvActualDefenition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="actual Defenition"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/tvDefenition"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id = "@+id/tvSynonyms"
+        android:text="Synonyms"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/tvDefenition"
+        android:layout_alignEnd="@+id/tvDefenition" />
+    <TextView
+        android:id="@+id/tvAntonyms"
+        android:textSize="30sp"
+        android:text="Antonyms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvExample"
+        android:layout_toRightOf="@+id/linearLayout4"
+        android:layout_toEndOf="@+id/linearLayout4"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:id="@+id/tvActualAntonyms"
+        android:text="actual antonyms"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvAntonyms"
+        android:layout_alignBottom="@+id/tvAntonyms"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvActualSynonyms"
+        android:textSize="20sp"
+        android:text="actual synonyms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvSynonyms"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sidkathuria.dictionary.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Dictionary"
+        android:textSize="50sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/textView4" />
+    <Button
+        android:id="@+id/btnStartService"
+        android:text="Minimise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etInput"
+        android:layout_toLeftOf="@+id/btnInput"
+        android:layout_toStartOf="@+id/btnInput"
+        android:layout_marginTop="19dp" />
+<Button
+    android:id="@+id/btnTranslate"
+    android:text="Translate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_alignRight="@+id/tvFeedBack"
+    android:layout_alignEnd="@+id/tvFeedBack" />
+   <EditText
+       android:id="@+id/etInput"
+       android:padding="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="enter word to search"
+       android:textSize="20sp"
+       android:layout_marginLeft="26dp"
+       android:layout_marginStart="26dp"
+       android:layout_marginTop="104dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnInput"
+        android:text="enter"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etInput"
+        android:layout_toRightOf="@+id/etInput"
+        android:layout_toEndOf="@+id/etInput"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+    <Button
+        android:id="@+id/btnWordOfTheDay"
+        android:text="word Of the Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAllLanguages"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+    <TextView
+        android:id="@+id/tvFeedBack"
+        android:text="Please Help Us Improve by\n Giving Your Feedback !"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFeedBack"
+        android:layout_alignBottom="@+id/btnFeedBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnFeedBack"
+        android:text="FeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp" />
+
+
+ <Button
+     android:text="View All Languages"
+     android:id="@+id/btnAllLanguages"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="21dp"
+     android:layout_above="@+id/btnFeedBack"
+     android:layout_centerHorizontal="true" />
+</RelativeLayout>
