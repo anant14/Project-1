@@ -28,7 +28,6 @@ public class FloatingWidgetService extends Service implements View.OnClickListen
     private ImageView remove_image_view;
     private Point szWindow = new Point();
     private View removeFloatingWidgetView;
-
     private int x_init_cord, y_init_cord, x_init_margin, y_init_margin;
 
     //Variable to check if the Floating widget view is on left side or in right side
