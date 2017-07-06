@@ -20,18 +20,17 @@
         android:text="Minimise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etInput"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/btnTranslate"
         android:layout_toLeftOf="@+id/btnInput"
-        android:layout_toStartOf="@+id/btnInput"
-        android:layout_marginTop="19dp" />
+        android:layout_toStartOf="@+id/btnInput" />
 <Button
     android:id="@+id/btnTranslate"
     android:text="Translate"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
-    android:layout_alignRight="@+id/tvFeedBack"
-    android:layout_alignEnd="@+id/tvFeedBack" />
+    android:layout_centerHorizontal="true" />
    <EditText
        android:id="@+id/etInput"
        android:padding="10dp"

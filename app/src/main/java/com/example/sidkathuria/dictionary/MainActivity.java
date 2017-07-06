@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
 ((Button)findViewById(R.id.btnStartService)).setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        startService(new Intent(MainActivity.this,FloatingWidgetService.class));
+        Intent i =  new Intent(MainActivity.this,FloatingWidgetService.class);
+        startService(i);
+
+          finish();
     }
 });
 
@@ -87,6 +90,7 @@ etInput = (EditText)findViewById(R.id.etInput);
         Intent i = new Intent(MainActivity.this, Result.class);
         i.putExtra("word", etInput.getText());
         startActivity(i);
+
     }
     });
 }

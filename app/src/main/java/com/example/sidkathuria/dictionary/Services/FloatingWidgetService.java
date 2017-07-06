@@ -10,6 +10,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -19,6 +20,7 @@ import android.widget.ImageView;
 
 import com.example.sidkathuria.dictionary.MainActivity;
 import com.example.sidkathuria.dictionary.R;
+import com.example.sidkathuria.dictionary.activities.DialogActivity;
 
 public class FloatingWidgetService extends Service implements View.OnClickListener {
     private WindowManager mWindowManager;
@@ -308,13 +310,14 @@ public class FloatingWidgetService extends Service implements View.OnClickListen
                 expandedView.setVisibility(View.GONE);
                 break;
             case R.id.open_activity_button:
-                //open the activity and stop service
-                Intent intent = new Intent(FloatingWidgetService.this, MainActivity.class);
+              //  open the activity and stop service
+                Intent intent = new Intent(FloatingWidgetService.this,DialogActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
 
                 //close the service and remove view from the view hierarchy
                 stopSelf();
+
                 break;
         }
     }

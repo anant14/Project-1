@@ -1,12 +1,10 @@
 package com.example.sidkathuria.dictionary.api;
 
-import com.example.sidkathuria.dictionary.models.Languages;
 import com.example.sidkathuria.dictionary.models.results;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
-import retrofit2.http.Query;
 
 /**
  * Created by sidkathuria on 7/5/2017.
@@ -14,7 +12,7 @@ import retrofit2.http.Query;
 
 public interface LanguageApi {
     @Headers({
-
+            "Accept: application/json",
             "app_id :5037d509",
             "app_key : 4dc1aebaa63721f0f8e79a55e2514bc7"
     })

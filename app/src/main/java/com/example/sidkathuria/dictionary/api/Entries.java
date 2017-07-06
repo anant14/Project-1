@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 
 public interface Entries {
     @Headers({
-
+            "Accept: application/json",
             "app_id : 5037d509",
             "app_key : 4dc1aebaa63721f0f8e79a55e2514bc7"
     })

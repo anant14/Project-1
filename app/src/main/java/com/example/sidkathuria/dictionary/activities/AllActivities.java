@@ -8,10 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import com.example.sidkathuria.dictionary.R;
 import com.example.sidkathuria.dictionary.adapters.AllActivitiesAdapter;
 import com.example.sidkathuria.dictionary.api.LanguageApi;
-import com.example.sidkathuria.dictionary.models.Languages;
 import com.example.sidkathuria.dictionary.models.results;
-
-import org.intellij.lang.annotations.Language;
 
 import java.util.ArrayList;
 
